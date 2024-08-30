@@ -9,7 +9,7 @@ import {
   startStop,
 } from '../redux/actions';
 
-const Controls = () => {
+function Controls() {
   const dispatch = useDispatch();
   const sessionLength = useSelector((state) => state.sessionLength);
   const breakLength = useSelector((state) => state.breakLength);
@@ -30,6 +30,6 @@ const Controls = () => {
       <button type="button" id="reset" onClick={() => dispatch(reset())}>Reset</button>
     </div>
   );
-};
+}
 
 export default Controls;

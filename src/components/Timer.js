@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { tick } from '../redux/actions';
 
-const Timer = () => {
+function Timer() {
   const dispatch = useDispatch();
   const timeLeft = useSelector((state) => state.timeLeft);
   const isActive = useSelector((state) => state.isActive);
@@ -54,6 +54,6 @@ const Timer = () => {
       </audio>
     </div>
   );
-};
+}
 
 export default Timer;

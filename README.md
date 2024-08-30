@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+25 + 5 Clock ⏲️🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Description 📝
+The 25 + 5 Clock is a web application built using React that helps users manage their time effectively using the Pomodoro Technique. Users can set a 25-minute focus session followed by a 5-minute break, making it perfect for enhancing productivity and maintaining focus. This tool is ideal for anyone looking to improve their time management skills. 💻📝🚀
 
-## Available Scripts
+Demo 📸
+![Screenshot (189)](https://github.com/user-attachments/assets/a015ead1-e23c-4403-875c-ac5012b9aae4)
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Live Demo:[https://javascript-calculator-aodeufzbp-zainab-behzads-projects.vercel.app/]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Technologies Used 🛠️
+- React
+- HTML
+- CSS
+- JavaScript
+- Redux
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Installation 💻
+To install and set up this project, simply follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repository: 
 
-### `npm run eject`
+    git clone https://github.com/zainabbehzad/25-5-clock.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Navigate to the project directory: 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    cd 25-5-clock 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Install the dependencies: 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    npm install  
 
-## Learn More
+Start the development server: ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Copy
 
-### Code Splitting
+Open the app in your browser at
+    http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Usage 🎯
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Visit the live demo or run the app locally.
+Write Markdown text in the editor on the left.
+The preview on the right will update in real-time as you type.
+Use the various Markdown formatting options (headings, lists, links, etc.) to format your text.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributing 🤝
+Contributions to this project are welcome! If you'd like to contribute, please follow these steps:
 
-### Advanced Configuration
+1.Fork the repository to your own GitHub account.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2.Create a new branch with a descriptive name:
 
-### Deployment
+    git checkout -b feature/new-feature  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3.Make your changes and commit them with clear and descriptive commit messages.
 
-### `npm run build` fails to minify
+4.Commit your changes: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    git commit -m 'Add new feature'  
+
+5.Push your changes to your forked repository: 
+    git push origin feature/new-feature  
+
+6.Submit a pull request to the original repository.
+
+
+Author 👩‍💻
+
+LinkedIn: Zainab Behzad
+Email: [zainabbehzad03@gmail.com]
+Github: zainabbehzad
+
+
+Acknowledgements 🙏
+- React 
+- The JavaScript library used to build the application.
+- Redux 
+- The library used for state management in the application.---Feel free to replace placeholders like URLs and personal information with your actual details!
