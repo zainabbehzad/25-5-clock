@@ -21,48 +21,48 @@ const reducer = (state = initialState, action) => {
     case INCREMENT_SESSION:
       return state.sessionLength < 60
         ? {
-          ...state,
-          sessionLength: state.sessionLength + 1,
-          timeLeft: (state.sessionLength + 1) * 60
-        }
+            ...state,
+            sessionLength: state.sessionLength + 1,
+            timeLeft: (state.sessionLength + 1) * 60,
+          }
         : state;
 
     case DECREMENT_SESSION:
       return state.sessionLength > 1
         ? {
-          ...state,
-          sessionLength: state.sessionLength - 1, 
-          timeLeft: (state.sessionLength - 1) * 60,
-        }
+            ...state,
+            sessionLength: state.sessionLength - 1,
+            timeLeft: (state.sessionLength - 1) * 60,
+          }
         : state;
 
     case INCREMENT_BREAK:
       return state.breakLength < 60
         ? {
-        ...state, 
-          breakLength: state.breakLength + 1,
-        }
+            ...state,
+            breakLength: state.breakLength + 1,
+          }
         : state;
 
     case DECREMENT_BREAK:
       return state.breakLength > 1
         ? {
-          ...state,
-          breakLength: state.breakLength - 1,
-        } 
+            ...state,
+            breakLength: state.breakLength - 1,
+          }
         : state;
 
     case RESET:
-      const beepReset = document.getElementById('beep');
-    if (beepReset) {
-      beepReset.pause();
-      beepReset.currentTime = 0; // Reset audio
+      let beepReset = document.getElementById('beep');
+      if (beepReset) {
+        beepReset.pause();
+        beepReset.currentTime = 0;
       }
       return {
         ...initialState,
-        timeLeft: 1500, // Reset time left to 25 minutes
-        isActive: false, // Stop the timer
-              timerLabel: 'Session', // Reset timer label
+        timeLeft: 1500,
+        isActive: false,
+        timerLabel: 'Session',
       };
 
     case START_STOP:

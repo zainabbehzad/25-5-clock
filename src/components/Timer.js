@@ -4,9 +4,9 @@ import { tick } from '../redux/actions';
 
 const Timer = () => {
   const dispatch = useDispatch();
-  const timeLeft = useSelector(state => state.timeLeft);
-  const isActive = useSelector(state => state.isActive);
-  const timerLabel = useSelector(state => state.timerLabel);
+  const timeLeft = useSelector((state) => state.timeLeft);
+  const isActive = useSelector((state) => state.isActive);
+  const timerLabel = useSelector((state) => state.timerLabel);
   const audioRef = useRef(null);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const Timer = () => {
 
       if (audioRef.current) {
         audioRef.current.currentTime = 0;
-        audioRef.current.play().catch(err => {
+        audioRef.current.play().catch((err) => {
           console.error('Audio playback failed:', err);
         });
       }
@@ -32,23 +32,26 @@ const Timer = () => {
 
     return () => clearInterval(interval);
   }, [isActive, timeLeft, dispatch, timerLabel]);
-    const formatTime = (seconds) => {
-  const minutes = Math.floor(seconds / 60);
+
+  const formatTime = (seconds) => {
+    const minutes = Math.floor(seconds / 60);
     const secs = seconds % 60;
     return `${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
   };
 
   return (
-      <div>
-          <h2 id="timer-label">{timerLabel}</h2>
-          <div id="time-left">{formatTime(timeLeft)}</div>
-          <audio
-          id="beep"
-              ref={audioRef}
-              src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/BeepSound.wav"
-                preload="auto"
-            />
-        </div>
+    <div>
+      <h2 id="timer-label">{timerLabel}</h2>
+      <div id="time-left">{formatTime(timeLeft)}</div>
+      <audio
+        id="beep"
+        ref={audioRef}
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/BeepSound.wav"
+        preload="auto"
+      >
+        <track kind="captions" srcLang="en" />
+      </audio>
+    </div>
   );
 };
 
