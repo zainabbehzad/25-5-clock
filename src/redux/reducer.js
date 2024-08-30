@@ -16,40 +16,40 @@ const initialState = {
   timerLabel: 'Session',
 };
 
-const reducer = (state = initialState, action) => {
+function reducer(state = initialState, action) {
   switch (action.type) {
     case INCREMENT_SESSION:
       return state.sessionLength < 60
         ? {
-            ...state,
-            sessionLength: state.sessionLength + 1,
-            timeLeft: (state.sessionLength + 1) * 60,
-          }
+          ...state,
+          sessionLength: state.sessionLength + 1,
+          timeLeft: (state.sessionLength + 1) * 60,
+        }
         : state;
 
     case DECREMENT_SESSION:
       return state.sessionLength > 1
         ? {
-            ...state,
-            sessionLength: state.sessionLength - 1,
-            timeLeft: (state.sessionLength - 1) * 60,
-          }
+          ...state,
+          sessionLength: state.sessionLength - 1,
+          timeLeft: (state.sessionLength - 1) * 60,
+        }
         : state;
 
     case INCREMENT_BREAK:
       return state.breakLength < 60
         ? {
-            ...state,
-            breakLength: state.breakLength + 1,
-          }
+          ...state,
+          breakLength: state.breakLength + 1,
+        }
         : state;
 
     case DECREMENT_BREAK:
       return state.breakLength > 1
         ? {
-            ...state,
-            breakLength: state.breakLength - 1,
-          }
+          ...state,
+          breakLength: state.breakLength - 1,
+        }
         : state;
 
     case RESET: {
@@ -89,6 +89,6 @@ const reducer = (state = initialState, action) => {
     default:
       return state;
   }
-};
+}
 
 export default reducer;
