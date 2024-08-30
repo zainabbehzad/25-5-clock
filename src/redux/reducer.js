@@ -52,26 +52,28 @@ const reducer = (state = initialState, action) => {
           }
         : state;
 
-    case RESET:
-      let beepReset = document.getElementById('beep');
+    case RESET: {
+      const beepReset = document.getElementById('beep');
       if (beepReset) {
         beepReset.pause();
-        beepReset.currentTime = 0;
+        beepReset.currentTime = 0; // Reset audio
       }
       return {
         ...initialState,
-        timeLeft: 1500,
-        isActive: false,
-        timerLabel: 'Session',
+        timeLeft: 1500, // Reset time left to 25 minutes
+        isActive: false, // Stop the timer
+        timerLabel: 'Session', // Reset timer label
       };
+    }
 
     case START_STOP:
       return { ...state, isActive: !state.isActive };
 
-    case TICK:
+    case TICK: {
       if (state.timeLeft > 0) {
         return { ...state, timeLeft: state.timeLeft - 1 };
-      } else if (state.isActive) {
+      } 
+      if (state.isActive) {
         const isSession = state.timerLabel === 'Session';
         const newTimeLeft = isSession ? state.breakLength * 60 : state.sessionLength * 60;
 
@@ -82,6 +84,7 @@ const reducer = (state = initialState, action) => {
         };
       }
       return state;
+    }
 
     default:
       return state;
