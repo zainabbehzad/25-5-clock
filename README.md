@@ -4,7 +4,7 @@ Project Description 📝
 The 25 + 5 Clock is a web application built using React that helps users manage their time effectively using the Pomodoro Technique. Users can set a 25-minute focus session followed by a 5-minute break, making it perfect for enhancing productivity and maintaining focus. This tool is ideal for anyone looking to improve their time management skills. 💻📝🚀
 
 Demo 📸
-![Screenshot (189)](https://github.com/user-attachments/assets/a015ead1-e23c-4403-875c-ac5012b9aae4)
+![Screenshot (190)](https://github.com/user-attachments/assets/e9327851-1836-45ff-b2b7-b3a1ea3ee6dc)
 
 
 
