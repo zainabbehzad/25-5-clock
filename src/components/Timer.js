@@ -17,17 +17,17 @@ const Timer = () => {
             }, 1000);
         }
 
-        // Play audio and switch timer label when time reaches zero
+        
         if (timeLeft === 0 && isActive) {
             const isSession = timerLabel === "Session";
-            // Play the beep sound
+           
             if (audioRef.current) {
-                audioRef.current.currentTime = 0; // Reset audio
+                audioRef.current.currentTime = 0;
                 audioRef.current.play().catch(err => {
                     console.error("Audio playback failed:", err);
                 });
             }
-            // Dispatch an action to handle the timer switch
+            
             dispatch({ type: 'SWITCH_TIMER', isSession });
         }
 
@@ -47,7 +47,7 @@ const Timer = () => {
             <audio
                 id="beep"
                 ref={audioRef}
-                src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/BeepSound.wav" // Updated to a longer sound
+                src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/BeepSound.wav"
                 preload="auto"
             />
         </div>

@@ -1,4 +1,3 @@
-// Action Types
 export const INCREMENT_SESSION = 'INCREMENT_SESSION';
 export const DECREMENT_SESSION = 'DECREMENT_SESSION';
 export const INCREMENT_BREAK = 'INCREMENT_BREAK';
@@ -7,7 +6,6 @@ export const RESET = 'RESET';
 export const START_STOP = 'START_STOP';
 export const TICK = 'TICK';
 
-// Action Creators
 export const incrementSession = () => ({ type: INCREMENT_SESSION });
 export const decrementSession = () => ({ type: DECREMENT_SESSION });
 export const incrementBreak = () => ({ type: INCREMENT_BREAK });

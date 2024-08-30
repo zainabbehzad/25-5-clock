@@ -11,9 +11,9 @@ import {
 const initialState = {
   sessionLength: 25,
   breakLength: 5,
-  timeLeft: 1500, // 25 minutes in seconds
+  timeLeft: 1500,
   isActive: false,
-  timerLabel: "Session", // Initialize timer label
+  timerLabel: "Session",
 };
 
 const reducer = (state = initialState, action) => {
