@@ -29,7 +29,7 @@ const reducer = (state = initialState, action) => {
 
     case DECREMENT_SESSION:
       return state.sessionLength > 1
-          ? {
+        ? {
           ...state,
           sessionLength: state.sessionLength - 1,
           timeLeft: (state.sessionLength - 1) * 60,
