@@ -19,10 +19,11 @@ const Timer = () => {
 
     if (timeLeft === 0 && isActive) {
       const isSession = timerLabel === 'Session';
+      const beepReset = audioRef.current;
 
-      if (audioRef.current) {
-        audioRef.current.currentTime = 0;
-        audioRef.current.play().catch((err) => {
+      if (beepReset) {
+        beepReset.currentTime = 0;
+        beepReset.play().catch((err) => {
           console.error('Audio playback failed:', err);
         });
       }
