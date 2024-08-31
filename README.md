@@ -10,7 +10,7 @@ Demo 📸
 
 
 
-Live Demo:[https://javascript-calculator-aodeufzbp-zainab-behzads-projects.vercel.app/]
+Live Demo:[https://25-5-clock-doi7xwosc-zainab-behzads-projects.vercel.app/]
 
 
 Technologies Used 🛠️
