@@ -16,7 +16,7 @@ const initialState = {
   timerLabel: 'Session',
 };
 
-function reducer(state = initialState, action) {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case INCREMENT_SESSION:
       return state.sessionLength < 60
@@ -89,6 +89,6 @@ function reducer(state = initialState, action) {
     default:
       return state;
   }
-}
+};
 
 export default reducer;
