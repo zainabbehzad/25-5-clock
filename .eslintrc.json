@@ -30,7 +30,7 @@
         "unnamedComponents": "arrow-function"
       }
     ],
-    "default-param-last": "error",
+    "default-param-last": "off", // Add this line to disable the rule
     "linebreak-style": ["error", "unix"]
   },
   "overrides": [
